@@ -1,0 +1,24 @@
+name: Multiple steps practice
+
+on:
+   push:
+
+jobs:
+  practice-job:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: Show Date
+         run: date
+         
+       - name: Current Directory 
+         run: pwd
+         
+       - name: list files
+         run: ls -la
+         
+       - name: Show current user
+         run: whoami
+       
+    
+  
