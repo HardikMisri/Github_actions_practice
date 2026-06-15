@@ -1,12 +1,21 @@
-name: My First Workflow
+name: Multiple Steps 
 
 on:
   push:
 
 jobs:
-  hello-job:
+  practice-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "Hello Hardik from GitHub Actions"
+      - name: Show Date 
+        run: date
+        
+      - name: Show Directory 
+        run: pwd
+        
+      - name: Show current User
+        run: whoami 
+        
+      - name: List file
+        run: ls -la
