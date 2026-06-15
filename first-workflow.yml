@@ -1,0 +1,12 @@
+name: My first workflow 
+
+on:
+  push:
+jobs:
+ hello_jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - neme: Print Message
+        run: echo "Hello Hardik from Github actions 
+    
